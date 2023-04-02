@@ -117,6 +117,12 @@ body {
 
 .background--red {
   background-color: red;
+
+}
+
+.larger {
+  font-size: larger;
+
 }
 
 @media screen and (min-width: 992px) {

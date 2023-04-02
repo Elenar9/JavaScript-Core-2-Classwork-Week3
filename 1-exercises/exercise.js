@@ -3,6 +3,11 @@
   - Install the Live Server plugin
   - Right click on index.html and select "Open with Live Server"
 */
+console.log("Does this work")
+
+
+//console.log(
+ // Array.from(document.querySelectorAll("p")));
 
 /*
 Task 1
@@ -11,6 +16,7 @@ Task 1
 Write JavaScript below that console.logs:
     1. all the "p" element nodes of the document,
     --> should log a list of nodes with a length of 6
+
 
     2. the first div element node
     --> should log the ".site-header" node
@@ -22,6 +28,8 @@ Write JavaScript below that console.logs:
     --> should log a list of nodes with a length of 3
 
 */
+document.querySelector("p");
+
 
 
 /*
@@ -47,6 +55,16 @@ Task 4
 
 When a user clicks the 'Larger links!' button, the text of all links on the page should increase.
 */
+var LargerButton = document.getElementById("largerLinksBtn");
+function increaseAllLinks() {
+ console.log(LargerButton);
+ const allLinks = document.querySelectorAll("a");
+ for (links of allLinks) {
+  links.classList.add("larger")
+ }
+
+}
+LargerButton.addEventListener("click",increaseAllLinks);
 
 
 /*
