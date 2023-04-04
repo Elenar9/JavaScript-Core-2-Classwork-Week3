@@ -50,9 +50,9 @@ Task 3
 When a user clicks the 'Change colour' button, the background colour of the page should change to red.
 Hint: can you do this with a CSS class instead of adding styles to the element?
 */
-var Wallpaper = document.getElementsByClassName(".background--red");
+var Wallpaper = document.getElementsByClassName(".background--red ");
 function changeColor() {
-  console.log(Wallpaper);
+  Wallpaper.addEventListener("click",changeColor );
 }
 
 /*
