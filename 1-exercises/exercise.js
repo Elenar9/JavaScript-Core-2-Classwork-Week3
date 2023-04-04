@@ -28,7 +28,7 @@ Write JavaScript below that console.logs:
     --> should log a list of nodes with a length of 3
 
 */
-document.querySelector("p");
+
 
 
 
@@ -38,8 +38,11 @@ Task 2
 
 When a user clicks the 'ALERT' button, an alert box should pop up with the text "Thanks for visiting Bikes for Refugees!"
 */
-
-
+let alertBtn = document.querySelector("#alertBtn");
+function doAlert(){
+  alert("Thanks for visiting Bikes for Refugees!");
+}
+alertBtn.addEventListener("click",doAlert);
 /*
 Task 3
 =======
@@ -47,7 +50,10 @@ Task 3
 When a user clicks the 'Change colour' button, the background colour of the page should change to red.
 Hint: can you do this with a CSS class instead of adding styles to the element?
 */
-
+var Wallpaper = document.getElementsByClassName(".background--red");
+function changeColor() {
+  console.log(Wallpaper);
+}
 
 /*
 Task 4
