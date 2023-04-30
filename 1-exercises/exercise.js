@@ -50,10 +50,17 @@ Task 3
 When a user clicks the 'Change colour' button, the background colour of the page should change to red.
 Hint: can you do this with a CSS class instead of adding styles to the element?
 */
-var Wallpaper = document.getElementsByClassName(".background--red ");
-function changeColor() {
-  Wallpaper.addEventListener("click",changeColor );
-}
+
+var backgroundChange =  document.getElementById("bgrChangeBtn");
+function changeButton () {
+   console.log(backgroundChange);
+   const allbuttons = document.querySelectorAll("a");
+   for (buttons of allbuttons) {
+    buttons.classList.add(".background--red")
+   }
+ }
+  backgroundChange.addEventListener("click",changeButton);
+
 
 /*
 Task 4
@@ -80,3 +87,4 @@ Task 5
 When a user clicks the 'Add some text' button, the text in the input field should be appended to the page as a new paragraph below it.
 Hint: the new paragraph should be appended to the element with id 'addArticle'.
 */
+  

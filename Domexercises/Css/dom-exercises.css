@@ -1,0 +1,32 @@
+/*******Reset css********/
+:root{
+--main-fond:sans-serif;
+--font-size:16px;
+--main-color:#f7df1e;
+--second-color:#222;
+--main-modal-color:rgba(247,222,30,0.85);
+--second-modal-color:rgba(34,34,34.0.85);
+--container-width:1200px;
+}
+html{
+    box-sizing: border-box;
+    font-family: var(--main-fond);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+*
+,
+*:before
+*:after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+}
+image{
+   max-width: 100%;
+   height: auto; 
+}
+/********menu-hamburger*****************/
+
